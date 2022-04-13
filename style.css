@@ -1,0 +1,223 @@
+:root {
+
+    --dark: hsla(0, 7%, 24%, 1);
+    --dark-pink: hsla(0, 36%, 70%, 1);
+    --bright-pink: hsla(0, 74%, 74%, 1);
+    --white: hsla(0, 0%, 100%, 1);
+    --background: hsla(0, 74%, 74%, 10%);
+    --email-background: hsla(0, 74%, 74%, 16%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    max-width: 2440px;
+    position: relative;
+    background: var(--background);
+    max-height: 800px;
+}
+
+.desktop {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.container {
+    max-width: 1000px;
+    padding-right: 20rem;
+    align-content: center;
+}
+
+.logo {
+
+    margin: 4rem 15rem 8rem 9rem;
+
+}
+
+h2 {
+
+    margin: 2rem 15rem 1rem 9rem; 
+    font-size: 64px;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    line-height: 1em;
+}
+
+span {
+
+    font-weight: 300;
+    color: var(--dark-pink);
+
+}
+
+p {
+
+    margin: 1rem 10rem 6rem 9rem;
+    color: var(--dark-pink);
+    line-height: 1.75em;
+
+}
+
+.email {
+
+    margin-left: 9rem;
+    border-radius: 25em;
+    padding: 1.3rem;
+    width: 27rem;
+    border-color: var(--dark-pink);
+    border-style: solid;
+    
+}
+
+::placeholder {
+    padding: 1rem;
+    color: var(--dark-pink);
+    opacity: .5;
+    font-size: 16px;
+    background: var(--email-background);
+}
+
+.submit {
+
+    width: 6rem;
+    height: 60px;
+    border-radius: 25em;
+    margin-left: -6rem;
+    background: var(--bright-pink);
+    border-color: var(--bright-pink);
+    border-style: solid;
+    vertical-align: top;
+
+}
+
+.arrow {
+
+    margin-top: .25rem;
+
+}
+
+
+
+@media (min-width: 1068px) {
+
+
+    .mobile {
+        display: none;
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 1068px) {
+
+    body {
+        margin: 0;
+        position: absolute;
+        
+    }
+
+    .desktop {
+        display: none;
+
+    }
+
+    .mobile-container {
+
+        max-width: auto;
+        height: 300px;
+
+    }
+
+    .mobile {
+
+        width: 550px;
+        margin-top: -75px;
+    }
+
+    .logo {
+        margin-left: 3rem;
+    }
+
+    
+
+    h2 {
+        
+        padding-top: 3rem;
+        text-align: center;
+
+    }
+
+    p {
+        width: 400px;
+        text-align: center;
+    }
+
+
+
+}
+
+@media (max-width: 1210px) {
+
+    
+    h2 {
+       
+        font-size: 55px;
+  
+    }
+    
+    span {
+    
+        font-weight: 300;
+        color: var(--dark-pink);
+    
+    }
+    
+    p {
+    
+      max-width: 300px;
+    
+    }
+    
+    .email {
+    
+        width: 20rem;
+    
+    }
+
+}
+
+@media (max-width: 1110px) {
+
+    
+    h2 {
+       
+        font-size: 45px;
+  
+    }
+    
+    span {
+    
+        font-weight: 300;
+        color: var(--dark-pink);
+    
+    }
+    
+    p {
+    
+      max-width: 300px;
+    
+    }
+    
+    .email {
+    
+        width: 17rem;
+    
+    }
+
+}
+
+
